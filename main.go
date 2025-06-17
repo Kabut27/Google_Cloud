@@ -6,7 +6,7 @@ import (
 )
 func main() {
         listenAddr := ":" + os.Getenv("PORT")
-        targetAddr := os.Getenv("V2RAY_SERVER_IP") + ":80"
+        targetAddr := os.Getenv("V2RAY_SERVER_IP") + ":443"
         ln, err := net.Listen("tcp", listenAddr)
         if err != nil {
                 return
